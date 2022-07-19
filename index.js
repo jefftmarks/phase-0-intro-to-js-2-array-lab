@@ -17,13 +17,13 @@ function destructivelyRemoveFirstCat() {
 }
 
 function appendCat(name) {
-    const appendCat = [...cats, "Broom"];
-    return appendCat;
+    const newArray = [...cats, name];
+    return newArray;
 }
 
 function prependCat(name) {
-    const prependCat = ["Arnold", ...cats];
-    return prependCat;
+    const newArray = [name, ...cats];
+    return newArray;
 }
 
 function removeLastCat(name) {
